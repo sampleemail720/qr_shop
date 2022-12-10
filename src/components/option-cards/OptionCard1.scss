@@ -1,0 +1,14 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item{
+    border-bottom: 1px solid #E4E4E4;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container > div:last-child{
+    border-bottom: none;
+}

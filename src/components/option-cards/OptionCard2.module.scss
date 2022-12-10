@@ -1,0 +1,17 @@
+.container{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item{
+    border-bottom: 1px solid #E4E4E4;
+}
+
+
+.item > .right{
+    width:85%;
+}
+
+.item > .left{
+    width:15%;
+}

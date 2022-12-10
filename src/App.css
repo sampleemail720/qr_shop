@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: 'regular';
+  src: url("./fonts/Roboto-Regular.ttf") format('truetype');
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family: 'medium';
+  src: url("./fonts/Roboto-Medium.ttf") format('truetype');
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face{
+  font-family: 'bold';
+  src: url("./fonts/Roboto-Bold.ttf") format('truetype');
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.font-normal{
+  font-family: "regular";
+  font-size:14px;
+}
+
+.font-medium{
+  font-family: "medium";
+  font-size:14px;
+}
+
+.font-bold{
+  font-family: "bold";
+  font-size:14px;
+}
+
+p{
+  margin:0;
+  font-size:14px;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+  font-size:14px;
+}
+
+.size-16{
+  font-size: 16px;
+}
+
+.media-query-test::after{
+  content: "Desktop";
+}
+
+.row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.js-between{
+  justify-content: space-between;
+}
+
+.flex-center{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.pv-15{
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.pt-10{
+  padding-top: 10px;
+}
+
+.pr-5{
+  padding-right: 5px;
+}
+
+@media only screen and (min-device-width:300px) and (max-device-width:699px) {
+  .media-query-test::after{
+    content: "Mobile";
   }
 }
